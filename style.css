@@ -7,7 +7,7 @@ html{
 }
 .parent-sort{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10vmin;
@@ -51,6 +51,9 @@ h1{
 h1 span{
   transition: .5s linear;
   margin-left: 10px;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
 }
 h1:hover span:nth-child(1){
   margin-right: 5px
@@ -58,11 +61,8 @@ h1:hover span:nth-child(1){
 h1:hover span:nth-child(2){
   margin-left: 30px
 }
-h1:hover span{
-  color: #fff;
-  text-shadow: 0 0 10px #fff,
-               0 0 20px #fff, 
-               0 0 40px #fff;
+a{
+  text-decoration: none;
 }
 ::before, ::after {
     box-sizing: border-box;
@@ -105,7 +105,6 @@ h1:hover span{
     transition: color 300ms ease-in-out;
     z-index: 1;
   }
-  
   
   .sort:hover,
   .sort:focus {
